@@ -242,7 +242,7 @@ span#user_email {
 
     .main-container>.sub-content {
         order: 1;
-        padding: 1rem;
+        padding: 1rem 1rem 3rem 1rem;
         height: -webkit-fill-available;
     }
 
