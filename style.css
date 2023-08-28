@@ -261,8 +261,7 @@ span#user_email {
 
     #thanking.main-container {
         width: 100vw;
-        padding-block: 5rem 2rem;
-        padding-inline: 2rem;
+        padding: 5rem 2rem;
     }
 
     #thanking.main-container>span.title {
