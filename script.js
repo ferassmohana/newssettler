@@ -15,12 +15,12 @@ const user_email = document.getElementById("user_email");
 
 function isValidEmail(input) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if ((input.value.length > 0 && emailRegex.test(input.value))) {
+    if ((input.value.length > 0 && emailRegex.test(input.value.trim()))) {
         submit_btn.classList.add("active");
         input.classList.remove("error");
         error_message.classList.remove("active");
     }
-    else if (input.value.length > 0 && !emailRegex.test(input.value)) {
+    else if (input.value.length > 0 && !emailRegex.test(input.value.trim())) {
         input.classList.add("error");
         error_message.classList.add("active");
         submit_btn.classList.remove("active");
